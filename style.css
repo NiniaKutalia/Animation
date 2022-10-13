@@ -1,0 +1,42 @@
+.main-img {
+    margin-left: 0;
+    height: 600px;
+}
+.main {
+    width: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+.bean {
+    height: 80px;
+    z-index: 1;
+}
+.bike {
+    height: 120px;
+    z-index: 2;    
+}
+/* animation */
+.cycle {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    animation: cycle 5s ease-in-out infinite;
+}
+@keyframes cycle {
+    from {left: 0%;}  
+    to {left: 600px;}  
+}
+.sun {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    animation: rotate 5s infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
